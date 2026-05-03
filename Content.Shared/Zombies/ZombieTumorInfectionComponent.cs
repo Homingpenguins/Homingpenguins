@@ -1,7 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Terkala <appleorange64@gmail.com>
+// SPDX-FileCopyrightText: 2026 QueerCats <jansencheng3@gmail.com>
+// SPDX-FileCopyrightText: 2026 Terkala <appleorange64@gmail.com>
 //
 // SPDX-License-Identifier: MIT
 
+using System.Collections.Generic;
 using Content.Shared.Damage;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -58,38 +60,52 @@ public sealed partial class ZombieTumorInfectionComponent : Component
     public TimeSpan? AutoZombifyTime;
 
     /// <summary>
-    /// Damage dealt per tick in early stage before tumor formation
+    /// Time when the TumorFormed stage started. Used to track the initial 2-minute grace period where no damage is dealt.
     /// </summary>
-    [DataField, AutoNetworkedField]
-    public DamageSpecifier EarlyDamage = new()
-    {
-        DamageDict = new()
-        {
-            { "Poison", 0.1 }
-        }
-    };
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoNetworkedField, AutoPausedField]
+    public TimeSpan? TumorFormedTime;
 
     /// <summary>
-    /// Damage dealt per tick after tumor formation.
+    /// Duration of the grace period after tumor formation where no damage is dealt but infection can still spread.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public DamageSpecifier TumorDamage = new()
-    {
-        DamageDict = new()
-        {
-            { "Poison", 0.2 }
-        }
-    };
+    public TimeSpan TumorFormedGracePeriod = TimeSpan.FromMinutes(2);
 
     /// <summary>
-    /// Damage dealt per tick in advanced stage
+    /// Damage dealt per tick for each infection stage.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public DamageSpecifier AdvancedDamage = new()
+    public Dictionary<ZombieTumorInfectionStage, DamageSpecifier> StageDamage = new()
     {
-        DamageDict = new()
         {
-            { "Poison", 0.5 }
+            ZombieTumorInfectionStage.Early,
+            new DamageSpecifier
+            {
+                DamageDict = new()
+                {
+                    { "Poison", 0.1 }
+                }
+            }
+        },
+        {
+            ZombieTumorInfectionStage.TumorFormed,
+            new DamageSpecifier
+            {
+                DamageDict = new()
+                {
+                    { "Poison", 0.2 }
+                }
+            }
+        },
+        {
+            ZombieTumorInfectionStage.Advanced,
+            new DamageSpecifier
+            {
+                DamageDict = new()
+                {
+                    { "Poison", 0.5 }
+                }
+            }
         }
     };
 
@@ -103,21 +119,21 @@ public sealed partial class ZombieTumorInfectionComponent : Component
     /// Time to progress from incubation to early stage (when symptoms begin).
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan IncubationToEarlyTime = TimeSpan.FromMinutes(10); //final version
+    public TimeSpan IncubationToEarlyTime = TimeSpan.FromMinutes(8); //final version
     //public TimeSpan IncubationToEarlyTime = TimeSpan.FromSeconds(5); //test version
 
     /// <summary>
     /// Time to progress from early to tumor formation stage.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan EarlyToTumorTime = TimeSpan.FromMinutes(10); //final version
+    public TimeSpan EarlyToTumorTime = TimeSpan.FromMinutes(7); //final version
     //public TimeSpan EarlyToTumorTime = TimeSpan.FromSeconds(10); //test version
 
     /// <summary>
     /// Time to progress from tumor to advanced stage.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan TumorToAdvancedTime = TimeSpan.FromSeconds(60);
+    public TimeSpan TumorToAdvancedTime = TimeSpan.FromMinutes(5);
 
     /// <summary>
     /// Amount of oil to drain per tick for IPCs in Early stage.

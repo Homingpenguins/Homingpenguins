@@ -113,8 +113,8 @@ reagent-desc-bahama-mama = Tropical cocktail.
 reagent-name-banana-honk = Banana Honk
 reagent-desc-banana-honk = A drink from Clown Heaven.
 
-reagent-name-barefoot = barefoot
-reagent-desc-barefoot = Barefoot and pregnant.
+reagent-name-bigfoot = bigfoot
+reagent-desc-bigfoot = According to the Eta Scorpii Cryptozoology Club, this is the favourite drink of the legendary cryptid ape-man, Bigfoot. According to actual scientists, bigfoot wouldn't have the materials to make this cocktail.
 
 reagent-name-beepsky-smash = Beepsky smash
 reagent-desc-beepsky-smash = Deny drinking this and prepare for THE LAW.
@@ -356,20 +356,38 @@ reagent-desc-espresso-martini = To wake you up and wind you down. Garnished with
 reagent-name-mayojito = mayojito
 reagent-desc-mayojito = An affront to god and man. Do not drink it.
 
-reagent-name-mimeosa = mimeosa 
+reagent-name-mimeosa = mimeosa
 reagent-desc-mimeosa = It has an orange tang so sour you just can't describe it.
 
 reagent-name-mimosa = mimosa
 reagent-desc-mimosa = Perfect for a lively brunch out with the girls.
 
-reagent-name-moscow-mule = moscow mule 
+reagent-name-moscow-mule = moscow mule
 reagent-desc-moscow-mule = A surpsingly strong and refreshing mixed drink, served in an iconic copper mug.
 
 reagent-name-the-sun-also-rises = the sun also rises
 reagent-desc-the-sun-also-rises = A strong cocktail mixed into a murky blend. A secret favorite of tortured authors.
 
-reagent-name-whiskey-sour = whiskey sour 
+reagent-name-whiskey-sour = whiskey sour
 reagent-desc-whiskey-sour = What's the secret ingredient? Eggs. It's eggs.
 
 reagent-name-zombiecocktail = Zombie
 reagent-desc-zombiecocktail = It gets in your head. Your he-eyeh-ead.
+
+reagent-name-black-japan = Black Japan
+reagent-desc-black-japan = A novel concoction of stout and melon liqueur. Kanpai!
+
+reagent-name-bruised-melon = bruised melon
+reagent-desc-bruised-melon = It still remains a mystery how someone would bruise a cocktail.
+
+reagent-name-coconut-sake-colada = coconut sake colada
+reagent-desc-coconut-sake-colada = A Japanese twist on the Pina Colada.
+
+reagent-name-cosmic-alaska = Cosmic Alaska
+reagent-desc-cosmic-alaska = The national drink of Gliese 1132b.
+
+reagent-name-horses-neck = horse's neck
+reagent-desc-horses-neck = Despite the name, it doesn’t contain any horses. However, if a horse can make the drink is a question still debated by mixologists to this day.
+
+reagent-name-ransom-note = ransom note
+reagent-desc-ransom-note = What’s being held hostage, you ask? Your sobriety, of course.

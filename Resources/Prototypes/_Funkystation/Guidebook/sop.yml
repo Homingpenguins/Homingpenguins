@@ -3,12 +3,15 @@
 # SPDX-FileCopyrightText: 2025 CMM <funkycmm>
 # SPDX-FileCopyrightText: 2025 Colin Moore <funkycmm>
 # SPDX-FileCopyrightText: 2025 Tay <td12233a@gmail.com>
+# SPDX-FileCopyrightText: 2025 YaraaraY <158123176+YaraaraY@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 ferynn <117872973+ferynn@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 ferynn <witchy.girl.me@gmail.com>
 # SPDX-FileCopyrightText: 2025 funkycmm <cmmaccounts@protonmail.com>
 # SPDX-FileCopyrightText: 2025 kbarkevich <24629810+kbarkevich@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+# SPDX-FileCopyrightText: 2026 Allycat <jenni.allison.ginn@gmail.com>
+# SPDX-FileCopyrightText: 2026 MaiaArai <158123176+YaraaraY@users.noreply.github.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
 
@@ -313,7 +316,6 @@
   children:
   - CESOP
   - StationEngineerSOP
-  - AtmosphericSOP
 
 - type: guideEntry
   id: CESOP
@@ -325,11 +327,6 @@
   name: guide-entry-stationengineer-sop
   text: "/ServerInfo/Funkystation/Guidebook/Engineering/StationEngineerSOP.xml"
 
-- type: guideEntry
-  id: AtmosphericSOP
-  name: guide-entry-atmospheric-sop
-  text: "/ServerInfo/Funkystation/Guidebook/Engineering/AtmosphericSOP.xml"
-
 # CARGO
 
 - type: guideEntry
@@ -339,6 +336,7 @@
   children:
   - QMSOP
   - CargoTechnicianSOP
+  - MailClerkSOP
   - SalvageSOP
 
 - type: guideEntry
@@ -350,6 +348,11 @@
   id: CargoTechnicianSOP
   name: guide-entry-cargotechnician-sop
   text: "/ServerInfo/Funkystation/Guidebook/Cargo/CargoTechnicianSOP.xml"
+
+- type: guideEntry
+  id: MailClerkSOP
+  name: Mail Clerk SOP
+  text: "/ServerInfo/Funkystation/Guidebook/Cargo/MailClerkSOP.xml"
 
 - type: guideEntry
   id: SalvageSOP

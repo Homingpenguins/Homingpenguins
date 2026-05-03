@@ -76,13 +76,16 @@
 # SPDX-FileCopyrightText: 2025 McBosserson <mcbosserson@hotmail.com>
 # SPDX-FileCopyrightText: 2025 Nox <nebulousnox38@gmail.com>
 # SPDX-FileCopyrightText: 2025 SpaceCat~Chan <49094338+SpaceCat-Chan@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
 # SPDX-FileCopyrightText: 2025 Tay <td12233a@gmail.com>
 # SPDX-FileCopyrightText: 2025 YaraaraY <158123176+YaraaraY@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Zergologist <114537969+Chedd-Error@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 mycobiota <154991750+mycobiota@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
 # SPDX-FileCopyrightText: 2025 vectorassembly <vectorassembly@icloud.com>
+# SPDX-FileCopyrightText: 2026 Steve <marlumpy@gmail.com>
+# SPDX-FileCopyrightText: 2026 Xcybitt <197952719+Xcybitt@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2026 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
 
@@ -489,6 +492,7 @@
     sprite: Objects/Tools/rcd.rsi
     state: icon
   - type: Item
+    size: Huge
     storedSprite:
       state: storage
       sprite: Objects/Tools/rcd_storage_64x.rsi #Done in 64x64 because it looks way too puny in 32x32
@@ -499,7 +503,7 @@
     sprite: Objects/Tools/rcd.rsi
     quickEquip: false
     slots:
-    - Belt
+    - back
   - type: PhysicalComposition
     materialComposition:
       Steel: 600
@@ -523,7 +527,7 @@
   id: RPD
   parent: RCD
   name: RPD
-  description: A heavy-duty industrial device used to rapidly lay atmospheric infrastructure.
+  description: A heavy-duty industrial device used to rapidly lay atmospheric infrastructure. Can be slung around the back of an engineering hardsuit.
   components:
   - type: MeleeWeapon
     damage:
@@ -532,6 +536,7 @@
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
   - type: Item
+    size: Huge
     storedSprite:
       state: storage
       sprite: Objects/Tools/rpd_storage_64x.rsi #Done in 64x64 because it looks way too puny in 32x32
@@ -550,6 +555,7 @@
     - VolumetricPump
     - PressurePump
     - HeatPump
+    - TemperatureGate
     - VentScrubber
     - PressureValve
     - PressureRegulator
@@ -572,6 +578,12 @@
     charges: 45
   - type: Sprite
     sprite: Objects/Tools/rpd.rsi
+  - type: Clothing
+    sprite: Objects/Tools/rpd.rsi
+    quickEquip: false
+    slots:
+    - back
+    - backStorage
   - type: UserInterface
     interfaces:
       enum.RpdUiKey.Key:
@@ -579,6 +591,9 @@
   - type: ActivatableUI
     inHandsOnly: true
     key: enum.RpdUiKey.Key
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
 
 - type: entity
   id: RCDEmpty
@@ -732,6 +747,8 @@
   - type: Item
     sprite: Objects/Tools/rcd.rsi
     heldPrefix: ammo
+    shape:
+    - 0,0,1,0
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
@@ -831,6 +848,12 @@
   - type: StaticPrice
     price: 25
   - type: Shovel
+  - type: Tool
+    qualities:
+    - Digging
+    useSound:
+      path: /Audio/Items/shovel_dig.ogg
+
 
 - type: entity
   parent: BaseItem

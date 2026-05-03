@@ -65,6 +65,7 @@
 # SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Fr0goo <frogoofrog@outlook.com>
 # SPDX-FileCopyrightText: 2025 MaiaArai <158123176+YaraaraY@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Tay <td12233a@gmail.com>
 # SPDX-FileCopyrightText: 2025 ThatOneMoon <91613003+ThatOneMoon@users.noreply.github.com>
@@ -285,13 +286,35 @@
   description: HONK!
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/clown.rsi
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/clown.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/clown.rsi
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/clown.rsi
   - type: Tag
     tags:
     - ClownSuit
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitClownAlt
+  name: clown jumpsuit
+  description: HONK!
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/clown_jumpsuit.rsi
+  - type: Clothing
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/clown_jumpsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPolkadotClown
+  name: polka dot jumpsuit
+  description: a colerfull polka dot suit! smells oddly like meat from a meat clown
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/polkadot_clown.rsi
+  - type: Clothing
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/polkadot_clown.rsi
 
 - type: entity
   parent: ClothingUniformJumpsuitClown
@@ -299,9 +322,9 @@
   name: banana clown suit
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/clown_banana.rsi
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/banana.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/clown_banana.rsi
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/banana.rsi
   - type: Construction
     graph: BananaClownJumpsuit
     node: jumpsuit
@@ -317,9 +340,9 @@
   description: A jolly dress, well suited to entertain your master, nuncle.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/jester.rsi
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/jester.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/jester.rsi
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/jester.rsi
 
 - type: entity
   parent: ClothingUniformJumpsuitJester
@@ -1155,9 +1178,9 @@
   description: A pirate variation of a space sailor's jumpsuit.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/pirate.rsi
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/pirate.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/pirate.rsi
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/pirate.rsi
   - type: AddAccentClothing
     accent: PirateAccent
 
@@ -1331,15 +1354,15 @@
   description: Made for true gladiators (or Ash Walkers).
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/gladiator.rsi
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/gladiator.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/gladiator.rsi
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/gladiator.rsi
 
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCasualBlue
   name: casual blue jumpsuit
-  description: A loose worn blue shirt with a grey pants, perfect for someone looking to relax.
+  description: A loose worn blue shirt with black pants, perfect for someone looking to relax.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
@@ -1369,7 +1392,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCasualPurple
   name: casual purple jumpsuit
-  description: A loose worn purple shirt with a grey pants, perfect for someone looking to relax.
+  description: A loose worn purple shirt with black pants, perfect for someone looking to relax.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
@@ -1399,7 +1422,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCasualRed
   name: casual red jumpsuit
-  description: A loose worn red shirt with a grey pants, perfect for someone looking to relax.
+  description: A loose worn red shirt with black pants, perfect for someone looking to relax.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
@@ -1429,7 +1452,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCasualGreen
   name: casual green jumpsuit
-  description: A loose worn green shirt with a grey pants, perfect for someone looking to relax.
+  description: A loose worn green shirt with black pants, perfect for someone looking to relax.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/casual.rsi

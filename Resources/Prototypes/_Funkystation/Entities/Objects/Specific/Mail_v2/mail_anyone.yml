@@ -1,7 +1,11 @@
+# SPDX-FileCopyrightText: 2025 Smugman <85798843+Smugman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ThatOneMoon <91613003+ThatOneMoon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ThatOneMoon <juozas.dringelis@gmail.com>
 # SPDX-FileCopyrightText: 2025 Xcybitt <lenazheng88@gmail.com>
 # SPDX-FileCopyrightText: 2025 Xcybitt <xcybitt@gmail.com>
 # SPDX-FileCopyrightText: 2025 mkanke-real <mikekanke@gmail.com>
 # SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+# SPDX-FileCopyrightText: 2026 Xcybitt <197952719+Xcybitt@users.noreply.github.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
 
@@ -574,3 +578,40 @@
     - id: ClothingHandsGlovesConducting
       amount: 7
     - id: ClothingHandsGlovesColorYellow
+
+- type: entity
+  parent: BaseMail
+  id: MailMysteryLighterBox
+  suffix: Ligher Mystery Box
+  components:
+  - type: Mail
+    contents:
+    - id: MysteryLighterBox
+
+- type: entity
+  parent: BaseMail
+  id: MailUplinkLighterBox
+  suffix: Uplink Ligher Mystery Box
+  components:
+  - type: Mail
+    contents:
+    - id: UplinkLighterBox
+
+- type: entity
+  parent: BaseMailSmall
+  id: MailGenie
+  suffix: Genie
+  components:
+  - type: Mail
+    isFragile: true
+    contents:
+    - id: ArabianLamp
+
+- type: entity
+  parent: BaseMailSmall
+  id: MailMultiweh
+  suffix: Multiweh
+  components:
+  - type: Mail
+    contents:
+    - id: PlushieLizardJobMultiweh
