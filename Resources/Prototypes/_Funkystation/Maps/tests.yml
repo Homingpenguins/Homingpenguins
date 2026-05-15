@@ -1,0 +1,78 @@
+# SPDX-FileCopyrightText: 2025 Homingpenguins <asadellace4@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: gameMap
+  id: confinedbz
+  mapName: Test 1 - Confined BZ
+  mapPath: /Maps/_Funkystation/Atmos/confinedbz.yml
+  minPlayers: 0
+  stations:
+    confinedbz:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Test 1 - Confined BZ"
+        - type: StationJobs
+          availableJobs:
+            ChiefEngineer: [ -1, -1 ]
+
+- type: gameMap
+  id: sciencelesszauker
+  mapName: Test 2 - Scienceless Zauker
+  mapPath: /Maps/_Funkystation/Atmos/sciencelesszauker.yml
+  minPlayers: 0
+  stations:
+    sciencelesszauker:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Test 2 - Scienceless Zauker"
+        - type: StationJobs
+          availableJobs:
+            ChiefEngineer: [ -1, -1 ]
+
+- type: gameMap
+  id: kaboom
+  mapName: Test 3 - Fuseless Maxcap
+  mapPath: /Maps/_Funkystation/Atmos/kaboom.yml
+  minPlayers: 0
+  stations:
+    kaboom:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Test 3 - Fuseless Maxcap"
+        - type: StationJobs
+          availableJobs:
+            ChiefEngineer: [ -1, -1 ]
+
+- type: gameMap
+  id: kaboom2
+  mapName: Test 4 - Fused Maxcap
+  mapPath: /Maps/_Funkystation/Atmos/kaboom.yml
+  minPlayers: 0
+  stations:
+    kaboom2:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Test 4 - Fused Maxcap"
+        - type: StationJobs
+          availableJobs:
+            ChiefEngineer: [ -1, -1 ]
+
+- type: gameMap
+  id: reactorpower
+  mapName: Test 5 - Reactor Power
+  mapPath: /Maps/_Funkystation/Atmos/reactorpower.yml
+  minPlayers: 0
+  stations:
+    reactorpower:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Test 5 - Reactor Power"
+        - type: StationJobs
+          availableJobs:
+            ChiefEngineer: [ -1, -1 ]
