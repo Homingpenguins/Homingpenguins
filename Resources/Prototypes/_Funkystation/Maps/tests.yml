@@ -76,3 +76,33 @@
         - type: StationJobs
           availableJobs:
             ChiefEngineer: [ -1, -1 ]
+
+- type: gameMap
+  id: reactortritium
+  mapName: Test 6 - Tritium Enrichment
+  mapPath: /Maps/_Funkystation/Atmos/reactortritium.yml
+  minPlayers: 0
+  stations:
+    reactortritium:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Test 6 - Tritium Enrichment"
+        - type: StationJobs
+          availableJobs:
+            ChiefEngineer: [ -1, -1 ]
+
+- type: gameMap
+  id: simplesupermatter
+  mapName: Test 7 - Simple Supermatter
+  mapPath: /Maps/_Funkystation/Atmos/simplesupermatter.yml
+  minPlayers: 0
+  stations:
+    simplesupermatter:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Test 7 - Simple Supermatter"
+        - type: StationJobs
+          availableJobs:
+            ChiefEngineer: [ -1, -1 ]
