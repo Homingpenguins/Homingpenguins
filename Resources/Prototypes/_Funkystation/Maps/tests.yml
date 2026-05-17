@@ -106,3 +106,19 @@
         - type: StationJobs
           availableJobs:
             ChiefEngineer: [ -1, -1 ]
+
+- type: gameMap
+  id: hfrjuggle
+  mapName: Test 8 - Fusion Juggling
+  mapPath: /Maps/_Funkystation/Atmos/hfrjuggle.yml
+  minPlayers: 0
+  stations:
+    hfrjuggle:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Test 8 - Fusion Juggling"
+        - type: StationJobs
+          availableJobs:
+            ChiefEngineer: [ -1, -1 ]
+
