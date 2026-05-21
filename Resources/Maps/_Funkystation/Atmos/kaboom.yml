@@ -34,6 +34,8 @@ entities:
     - type: OccluderTree
   - uid: 2
     components:
+    - type: BecomesStation
+      id: kaboom
     - type: MetaData
       name: grid
     - type: Transform

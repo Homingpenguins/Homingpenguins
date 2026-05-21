@@ -32,6 +32,8 @@ entities:
     - type: OccluderTree
   - uid: 2
     components:
+    - type: BecomesStation
+      id: reactorpower
     - type: MetaData
       name: grid
     - type: Transform
