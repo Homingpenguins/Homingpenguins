@@ -48,12 +48,12 @@
             ChiefEngineer: [ -1, -1 ]
 
 - type: gameMap
-  id: kaboom
+  id: kaboom2
   mapName: Test 4 - Fused Maxcap
   mapPath: /Maps/_Funkystation/Atmos/kaboom.yml
   minPlayers: 0
   stations:
-    kaboom:
+    kaboom2:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

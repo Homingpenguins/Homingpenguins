@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/15/2026 01:47:43
-  entityCount: 996
+  time: 05/23/2026 21:49:12
+  entityCount: 1000
 maps:
 - 1
 grids:
@@ -32,8 +32,6 @@ entities:
     - type: OccluderTree
   - uid: 2
     components:
-    - type: BecomesStation
-      id: reactorpower
     - type: MetaData
       name: grid
     - type: Transform
@@ -114,7 +112,7 @@ entities:
             0: 30577
           0,-1:
             0: 45873
-            2: 2184
+            1: 2184
           -1,0:
             0: 56512
           0,1:
@@ -168,10 +166,10 @@ entities:
           3,4:
             0: 65535
           -4,2:
-            1: 12336
+            2: 12336
             0: 34952
           -4,3:
-            1: 12336
+            2: 12336
             0: 34952
           -4,0:
             0: 32768
@@ -187,7 +185,7 @@ entities:
             0: 65535
           -4,4:
             0: 34952
-            1: 12336
+            2: 12336
           -3,4:
             0: 65535
           -2,0:
@@ -204,13 +202,13 @@ entities:
             0: 65535
           -1,-1:
             0: 43136
-            2: 546
+            1: 546
           -1,-2:
-            2: 8742
+            1: 8742
             0: 34824
           0,-2:
             0: 13075
-            2: 34956
+            1: 34956
           -4,5:
             0: 136
           -3,5:
@@ -252,7 +250,7 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 293.15
+          immutable: True
           moles:
           - 0
           - 0
@@ -275,7 +273,7 @@ entities:
           - 0
           - 0
         - volume: 2500
-          immutable: True
+          temperature: 293.15
           moles:
           - 0
           - 0
@@ -2311,6 +2309,14 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -1.5,2.5
       parent: 2
+- proto: ComputerResearchAndDevelopment
+  entities:
+  - uid: 696
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 2.5,5.5
+      parent: 2
 - proto: CrateGenericSteel
   entities:
   - uid: 160
@@ -3156,6 +3162,13 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#2887E8FF'
+- proto: GasThermoMachineAdvancedFreezer
+  entities:
+  - uid: 997
+    components:
+    - type: Transform
+      pos: -12.5,8.5
+      parent: 2
 - proto: GasTurbineFlatpack
   entities:
   - uid: 508
@@ -4464,6 +4477,20 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-6.5
+      parent: 2
+- proto: ResearchAndDevelopmentServer
+  entities:
+  - uid: 998
+    components:
+    - type: Transform
+      pos: 3.5,5.5
+      parent: 2
+- proto: ResearchDiskDebug
+  entities:
+  - uid: 1000
+    components:
+    - type: Transform
+      pos: 3.0199206,5.540424
       parent: 2
 - proto: SheetBrass
   entities:
@@ -6704,10 +6731,10 @@ entities:
     - type: Transform
       pos: -1.5,5.5
       parent: 2
-  - uid: 696
+  - uid: 999
     components:
     - type: Transform
-      pos: 2.5,5.5
+      pos: -2.5,5.5
       parent: 2
 - proto: TableFancyGreen
   entities:

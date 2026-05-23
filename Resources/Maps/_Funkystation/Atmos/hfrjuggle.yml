@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/17/2026 00:17:53
-  entityCount: 982
+  time: 05/23/2026 23:22:29
+  entityCount: 984
 maps:
 - 1
 grids:
@@ -32,8 +32,6 @@ entities:
     - type: OccluderTree
   - uid: 2
     components:
-    - type: BecomesStation
-      id: hfrjuggle
     - type: MetaData
       name: grid
     - type: Transform
@@ -281,7 +279,7 @@ entities:
       pos: -0.5,4.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -4171.8994
+      secondsUntilStateChange: -4207.667
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -292,7 +290,7 @@ entities:
       pos: 0.5,4.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -4172.133
+      secondsUntilStateChange: -4207.9004
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -303,7 +301,7 @@ entities:
       pos: 1.5,4.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -4172.366
+      secondsUntilStateChange: -4208.134
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -465,6 +463,11 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,4.5
+      parent: 2
+  - uid: 983
+    components:
+    - type: Transform
+      pos: 0.5,-6.5
       parent: 2
 - proto: AtmosDeviceFanTiny
   entities:
@@ -2442,7 +2445,7 @@ entities:
   - uid: 756
     components:
     - type: Transform
-      pos: -1.5,5.5
+      pos: -4.5,5.5
       parent: 2
   - uid: 757
     components:
@@ -5933,5 +5936,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 19.5,18.5
+      parent: 2
+- proto: WaterTankHighCapacity
+  entities:
+  - uid: 984
+    components:
+    - type: Transform
+      pos: -1.5,5.5
       parent: 2
 ...
